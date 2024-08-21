@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 export function ShoppingSite(){
     const [categories, setCategories] = useState([]);
     const [products, setProducts] = useState([{id:0, title:'', price:0, description:'', category:'', image:'', rating:{rate:0, count:0}}])
-    const [cartItems, setCartItems] = useState([]);
+    const [cartItems] = useState([]);
     const [cartCount, setCartCount] = useState(0)
     const [cartToggle, setCartToggle] = useState(true)
     function LoadCategories(){
